@@ -12,6 +12,12 @@ public class Guitar {
 		this.spec = spec;
 	}
 	
+	public Guitar(String serialNumber, double price, Builder builder, String model, Type type, Wood backWood, Wood topWood, int numString){
+		this.serialNumber = serialNumber;
+		this.price = price;
+		this.spec = new GuitarSpec(builder, model, type, backWood, topWood, numString);
+	}
+	
 	
 	public String getSerialNumber() {
 		return serialNumber;

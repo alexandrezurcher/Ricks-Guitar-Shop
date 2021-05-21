@@ -39,6 +39,6 @@ public class FindGuitarTester {
 		inventory.addGuitar("V95670",1400,new GuitarSpec(Builder.FENDER, "Stratocaster", Type.ELECTRIC, Wood.CEDAR, Wood.MAHOGANY, 6));
 		inventory.addGuitar("F95643",1400,new GuitarSpec(Builder.GIBSON, "Stratocastor",Type.ELECTRIC, Wood.INDIAN_ROSEWOOD, Wood.CEDAR, 6));
 		inventory.addGuitar("F95623",1400,new GuitarSpec(Builder.MARTIN, "Academy", Type.ACOUSTIC,Wood.BRAZILIAN_ROSEWOOD, Wood.CEDAR, 6));
-
+		inventory.addGuitar("S903142", 1300, Builder.MARTIN, "Strong", Type.ACOUSTIC, Wood.BRAZILIAN_ROSEWOOD, Wood.MAHOGANY, 12);
 	}
 }

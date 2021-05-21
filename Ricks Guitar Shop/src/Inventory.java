@@ -14,6 +14,11 @@ public class Inventory {
 		Guitar guitar = new Guitar(serialNumber, price, spec);
 		guitars.add(guitar);
 	}
+	
+	public void addGuitar(String serialNumber, double price, Builder builder, String model, Type type, Wood backWood, Wood topWood, int numString) {
+		Guitar guitar = new Guitar(serialNumber, price, builder, model, type, backWood, topWood, numString);
+		guitars.add(guitar);
+	}
 
 	public Guitar getGuitar(String serialNumber) {
 		for(Iterator i = guitars.iterator(); i.hasNext();) {
