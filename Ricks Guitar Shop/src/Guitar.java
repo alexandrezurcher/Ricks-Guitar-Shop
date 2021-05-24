@@ -5,7 +5,7 @@ public class Guitar {
 	private double price;
 	private GuitarSpec spec;
 	
-	
+	//properties of GuitarSpec are encapsulated
 	public Guitar(String serialNumber, double price, GuitarSpec spec) {
 		this.serialNumber = serialNumber;
 		this.price = price;

@@ -39,4 +39,20 @@ public class GuitarSpec {
 	public int getNumString() {
 		return numString;
 	}
+	//new methood matches delegated from Inventory Search() method  
+	public boolean matches(GuitarSpec otherSpec) {
+		if(builder != otherSpec.builder) 
+			return false;
+		if((model != null) && (!model.equals("")) && (!model.equals(otherSpec.model)))
+			return false;
+		if(type != otherSpec.type)
+			return false;
+		if(backWood != otherSpec.backWood)
+			return false;
+		if(topWood != otherSpec.topWood)
+			return false;
+		if(numString != otherSpec.numString)
+			return false;	
+		return true;
+	}
 }
